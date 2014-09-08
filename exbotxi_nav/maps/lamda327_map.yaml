@@ -1,4 +1,4 @@
-image: gmapping_map.pgm
+image: lamda327_map.pgm
 resolution: 0.050000
 origin: [-12.200000, -13.800000, 0.000000]
 negate: 0
