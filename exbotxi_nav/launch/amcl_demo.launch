@@ -15,4 +15,5 @@
   <!-- Fire up AMCL -->
   <include file="$(find exbotxi_nav)/launch/includes/amcl.launch.xml" />
   
+  <include file="$(find exbotxi_nav)/launch/laser_filter.launch" />
 </launch>
