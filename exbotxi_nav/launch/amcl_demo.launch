@@ -10,10 +10,12 @@
   <node name="map_server" pkg="map_server" type="map_server" args="$(find exbotxi_nav)/maps/$(arg map)"/>
 
   <!-- Start move_base  -->
-  <include file="$(find exbotxi_nav)/launch/includes/move_base.launch.xml" />
-
+  <include file="$(find exbotxi_nav)/launch/includes/move_base.launch.xml" >
+    <arg name="move_base_group" value="turtlebot" />
+  </include>
+  
   <!-- Fire up AMCL -->
   <include file="$(find exbotxi_nav)/launch/includes/amcl.launch.xml" />
   
-  <include file="$(find exbotxi_nav)/launch/laser_filter.launch" />
+  <!--include file="$(find exbotxi_nav)/launch/laser_filter.launch" /-->
 </launch>
